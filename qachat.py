@@ -2,10 +2,10 @@ import streamlit as st
 import google.generativeai as genai
 
 # Load environment variables
-genai.configure(api_key="AIzaSyD28hPqDIQ3U-NI1DAmqi5S_9nPKZ6L1uM")
+genai.configure(api_key="AIzaSyCeweDNIebKBTA2KCXz4y3_eAwKN5H2XS4")
 
 # Load Gemini pro model and initialize chat
-model = genai.GenerativeModel("gemini-pro")
+model = genai.GenerativeModel("gemini-2.0-flash")
 chat = model.start_chat(history=[])
 
 # Function to get response from Gemini model
